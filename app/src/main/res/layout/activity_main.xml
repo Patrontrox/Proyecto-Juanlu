@@ -6,45 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
-        <TextView
-            android:id="@+id/txtWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="@string/nombre"
-            android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/idImage"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="4"
-            android:scaleType="centerCrop"
-            android:src="@drawable/imagen_proyecto" />
-
-        <EditText
-            android:id="@+id/idUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_weight="2"
-            android:autofillHints="username"
-            android:hint="Usuario"
-            android:minHeight="48dp" />
-
-        <Button
-            android:id="@+id/btCredit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_weight="2"
-            android:text="Continuar" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

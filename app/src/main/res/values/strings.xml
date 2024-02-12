@@ -8,5 +8,10 @@
             proyecto de código abierto que permite a los desarrolladores
             crear sus propias versiones personalizadas de Android.
     </string>
+
+
+
     <string name="contact">Contacto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

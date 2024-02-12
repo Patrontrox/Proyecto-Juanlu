@@ -20,6 +20,9 @@ class CreditsActivity : AppCompatActivity() {
             text = getString(R.string.app_description, name)
         }
 
+
+
+
         val btContact = findViewById<Button>(R.id.btContact)
         btContact!!.setOnClickListener {
             val email = "ajldominguez@ieslamarisma.net"
