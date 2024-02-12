@@ -11,6 +11,13 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <Switch
+            android:id="@+id/swTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Tema Oscuro"
+            android:layout_marginTop="16dp"/>
+
         <TextView
             android:id="@+id/txtWelcome"
             android:layout_width="wrap_content"
@@ -37,14 +44,6 @@
             android:autofillHints="username"
             android:hint="Usuario"
             android:minHeight="48dp" />
-
-        <Button
-            android:id="@+id/btCredit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_weight="2"
-            android:text="Continuar" />
 
         <Button
             android:id="@+id/button_login"

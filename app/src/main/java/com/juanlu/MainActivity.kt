@@ -16,15 +16,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-
-    fun nextPage() {
-        val btCredits = findViewById<Button>(R.id.btCredit)
-        btCredits.setOnClickListener {
-            val idUser = findViewById<EditText>(R.id.idUser)
-            val intent = Intent(this@MainActivity, CreditsActivity::class.java)
-            intent.putExtra("app_name", "AOSP")
-            intent.putExtra("NAME", idUser.text.toString())
-            startActivity(intent)
-        }
-    }
 }

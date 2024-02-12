@@ -24,10 +24,6 @@ class MenuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btCredit.setOnClickListener {
-
-            val savedUsername = requireContext().getSharedPreferences("savedUsername", Context.MODE_PRIVATE)
-            val username = savedUsername.getString("username", "")
-            binding.userName.text = username
             findNavController().navigate(R.id.action_menuFragment_to_creditsActivity)
         }
         binding.btExit.setOnClickListener {

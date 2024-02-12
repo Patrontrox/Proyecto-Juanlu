@@ -2,7 +2,7 @@
     <string name="app_name">Proyecto-Juanlu</string>
     <string name="nombre">Welcome to AOSP PROJECT</string>
 
-    <string name="app_description">%s, Versión beta en ejecución de AOSP PROJECT</string>
+    <string name="app_description">Dev: Juanlu, Versión beta en ejecución de AOSP PROJECT</string>
     <string name="welcomeText">Welcome to AOSP PROJECT</string>
     <string name="usingVersion">AOSP (Android Open Source Project) es un
             proyecto de código abierto que permite a los desarrolladores
