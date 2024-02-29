@@ -6,35 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MenuFragment">
 
-    <TextView
+    <!--<TextView
         android:id="@+id/txtWelcome"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPublicaciones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--<Button
         android:id="@+id/btCredit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Creditos"
+        android:text="@string/irACredit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
-        app:layout_constraintVertical_bias="1.0" />
+        />-->
 
-    <Button
-        android:id="@+id/btExit"
+    <!--<Button
+        android:id="@+id/btSalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salir"
+        android:text="@string/salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btCredit"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@id/btCredit"
+        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

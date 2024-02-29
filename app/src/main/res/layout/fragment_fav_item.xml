@@ -4,52 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".data.DetailItemFragment">
+    tools:context=".data.FavItemFragment">
 
-
-
-    <TextView
-        android:id="@+id/tvUsuarioTop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/md_theme_light_error"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ivPhoto"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="example"
-        android:textColor="@color/white"
-        />
-
-
-    <ImageButton
+    <ImageView
         android:id="@+id/ivPhoto"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginTop="16dp"
+        android:src="@drawable/imagen_proyecto"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvUsuarioTop"
-        tools:src="@drawable/imagen_proyecto"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvUsuarioBottom"
+        android:id="@+id/tvUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:text="@string/usuario"
+        app:layout_constraintEnd_toEndOf="@+id/ivPhoto"
         app:layout_constraintStart_toStartOf="@+id/ivPhoto"
         app:layout_constraintTop_toBottomOf="@+id/ivPhoto"
-        tools:text="maria_lopez" />
+        tools:text="Profile Photo" />
 
-    <CheckBox
-        android:id="@+id/chkLike"
+    <TextView
+        android:id="@+id/tvUsuarioDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:button="@drawable/baseline_favorite_24"
+        android:layout_marginTop="10dp"
+        android:text="@string/usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/ivPhoto"
-        app:layout_constraintStart_toEndOf="@+id/tvUsuarioBottom"
-        app:layout_constraintTop_toBottomOf="@+id/ivPhoto" />
+        app:layout_constraintStart_toStartOf="@+id/ivPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuario"
+        tools:text= ""/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
