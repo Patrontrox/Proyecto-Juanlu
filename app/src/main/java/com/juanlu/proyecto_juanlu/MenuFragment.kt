@@ -22,27 +22,6 @@ class MenuFragment : Fragment() {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
         (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.app_name)
 
-/**val menuHost: MenuHost = requireActivity()
-        menuHost.addMenuProvider(object : MenuProvider {
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                menuInflater.inflate(R.menu.options_menu, menu)
-            }
-
-            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                return when (menuItem.itemId) {
-                    R.id.perfil -> {
-                        findNavController().navigate(R.id.action_menuFragment_to_userInfoFragment)
-                        true
-                    }
-                    R.id.favoritos -> {
-                        findNavController().navigate(R.id.action_menuFragment_to_itemListFragment)
-                        true
-                    }
-                    else -> false
-                }
-            }
-        }, viewLifecycleOwner, Lifecycle.State.RESUMED)*/
-
         inciarRecycler()
         return binding.root
     }

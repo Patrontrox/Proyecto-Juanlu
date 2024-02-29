@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity() {
         val navFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
         val navController = navFragment.navController
-//establece la barra con controles
-        //drawerLayout = binding.drawerLayout
         NavigationUI.setupActionBarWithNavController(this, navController)
 
         binding.bottomNav.setupWithNavController(navController)
