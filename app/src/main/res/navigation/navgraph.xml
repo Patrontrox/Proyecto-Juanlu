@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_usuarioIntroFragment"
+            app:destination="@id/usuarioIntroFragment" />
     </fragment>
     <fragment
         android:id="@+id/creditsFragment"
@@ -53,4 +56,12 @@
         android:name="com.juanlu.proyecto_juanlu.data.Usuario.UserInfoFragment"
         android:label="fragment_user_info"
         tools:layout="@layout/fragment_user_info" />
+    <fragment
+        android:id="@+id/usuarioIntroFragment"
+        android:name="UsuarioIntroFragment"
+        android:label="UsuarioIntroFragment" >
+        <action
+            android:id="@+id/action_usuarioIntroFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 </navigation>
